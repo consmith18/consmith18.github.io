@@ -377,7 +377,7 @@
                 <h3>What are you waiting for?</h3>
                 <p>We would greatly appreciate if you could RSVP before 28th of February 2020</p>
                 <form id="rsvp-form" class="rsvp-form"
-                      action="https://script.google.com/macros/s/AKfycbyEYVtQ_AavGp5Tx_ey5VVSY3QFq39HCL1h18vFYg5E_Kfa1YQ/exec"
+                      action=""
                       method="POST">
                   
                     <div class="row">
@@ -444,6 +444,30 @@
                     </div>
                     <button class="btn-fill rsvp-btn">
                             RSVP!
+                            <script type="text/javascript">
+                            $('#rsvp-form').on('submit', function (e) {
+                                e.preventDefault();
+                                var data = $(this).serialize();
+                        
+                                $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+                        
+                                if (MD5($('#invite_code').val()) !== '883e881bb4d22a7add958f2d6b052c9f') {
+                                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+                                } else {
+                                    $.post('https://script.google.com/macros/s/AKfycbyEYVtQ_AavGp5Tx_ey5VVSY3QFq39HCL1h18vFYg5E_Kfa1YQ/exec', data)
+                                        .done(function (data) {
+                                            console.log(data);
+                                            $('#alert-wrapper').html('');
+                                            $('#rsvp-modal').modal('show');
+                                        })
+                                        .fail(function (data) {
+                                            console.log(data);
+                                            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                                        });
+                                }
+                            });
+                        </script>
+
                     </button>
                 </form>
             </div>
