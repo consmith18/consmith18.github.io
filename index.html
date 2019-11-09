@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="assets/flexslider.css">
     <link rel="stylesheet" href="assets/styles.min.css">
     <link rel="stylesheet" href="assets/queries.css">
-    <link rel="stylesheet" href="assets/animate.css/animate.min.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/animate.min.css">
+    <link rel="stylesheet" href="assets/font-awesome.min.css">
     <link rel="stylesheet" href="assets/flipclock.css">
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Bad+Script&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -444,15 +444,13 @@
                     </div>
                     <button class="btn-fill rsvp-btn">
                             RSVP!
-                            <script type="text/javascript">
-                            $('#rsvp-form').on('submit', function (e) {
-                                e.preventDefault();
+                            <script type="text/javascript">                                                            
                                 var data = $(this).serialize();
-                        
-                                $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+                                
+                                $('#alert-wrapper').html('<div class="alert alert-' + 'info' + '" role="alert">' + '<strong>Just a sec!</strong> We are saving your details.' + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>');
                         
                                 if (MD5($('#invite_code').val()) !== '883e881bb4d22a7add958f2d6b052c9f') {
-                                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+                                    $('#alert-wrapper').html('<div class="alert alert-' + 'danger' + '" role="alert">' + '<strong>Sorry!</strong> Your invite code is incorrect.');
                                 } else {
                                     $.post('https://script.google.com/macros/s/AKfycbyEYVtQ_AavGp5Tx_ey5VVSY3QFq39HCL1h18vFYg5E_Kfa1YQ/exec', data)
                                         .done(function (data) {
@@ -462,10 +460,9 @@
                                         })
                                         .fail(function (data) {
                                             console.log(data);
-                                            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                                            $('#alert-wrapper').html('<div class="alert alert-' + 'danger' + '" role="alert">' + '<strong>Sorry!</strong> There is some issue with the server. ');
                                         });
-                                }
-                            });
+                                    }                            
                         </script>
 
                     </button>
