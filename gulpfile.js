@@ -10,7 +10,7 @@ gulp.task('sass', function () {
     return gulp.src('./sass/styles.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({basename: 'styles.min'}))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./assets'));
 });
 
 // watch changes in scss files and run sass task

@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="assets/flexslider.css">
     <link rel="stylesheet" href="assets/styles.min.css">
     <link rel="stylesheet" href="assets/queries.css">
-    <link rel="stylesheet" href="assets/animate.css/animate.min.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/flipclock.css">
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Bad+Script&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -255,6 +255,104 @@
     </div>    
 </section>
 
+<!-- <section class="rsvp text-center" id="rsvp">
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>You're my favorite deputy!</h3>
+                        <p>Thank you for your response</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>What are you waiting for?</h3>
+                <p>We would greatly appreciate if you could RSVP before 28th of February 2020</p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                  
+                    <div class="row">
+                            <div class="col-md-12 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-check-square"></i><select name="attending" id="attending" required>
+                                                <option>Can you go?</option>
+                                                <option value="Yes">Yes! To Infinity And Beyond! </option>
+                                                <option value="No">No Sorry! This town ain't big enough for the two of us!</option>
+                                            </select>
+                                    </div>
+                                </div>                                
+                    </div>    
+                    <div class="row">                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="Forename" class=""
+                                                                     placeholder="Forename"
+                                                                     required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="Surname" class=""
+                                                                 placeholder="Surname"
+                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                                                  max="10"
+                                                                  placeholder="Number of guests"
+                                                                  required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-cutlery"></i><input name="diet" class="" 
+                                                                  placeholder="Any dietry requirements?"
+                                                                  >
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-music"></i><input name="song" class="" 
+                                                                  placeholder="Pick a Song!"
+                                                                  >
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                class="" min="0"
+                                                                placeholder="Invite code"
+                                                                required>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                            RSVP!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section> -->
+
 <section class="rsvp text-center" id="rsvp">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -269,9 +367,9 @@
                         <div id="add-to-cal"></div>
                     </div>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -279,7 +377,7 @@
                 <h3>What are you waiting for?</h3>
                 <p>We would greatly appreciate if you could RSVP before 28th of February 2020</p>
                 <form id="rsvp-form" class="rsvp-form"
-                      action=""
+                      action="https://script.google.com/macros/s/AKfycbyEYVtQ_AavGp5Tx_ey5VVSY3QFq39HCL1h18vFYg5E_Kfa1YQ/exec"
                       method="POST">
                   
                     <div class="row">
