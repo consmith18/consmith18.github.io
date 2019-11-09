@@ -224,6 +224,9 @@ $(document).ready(function () {
 
         if (MD5($('#invite_code').val()) !== '883e881bb4d22a7add958f2d6b052c9f') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+        } else {
+            $('#alert-wrapper').html('');
+            $('#rsvp-modal').modal('show');
         }
     });
 
