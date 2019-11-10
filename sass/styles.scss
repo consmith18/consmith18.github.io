@@ -826,13 +826,12 @@ Google map
 .pointer-events-auto {
   pointer-events: auto;
 }
-.clock {
-  width: 100%;
-  height: 55px;
-  margin: 0 auto 10px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+.timer {
+  zoom: 0.5;
+  -moz-transform: scale(0.5);
 }
+
+
 
 /* ==========================================================================
 RSVP form
