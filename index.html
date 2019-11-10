@@ -32,11 +32,13 @@
     <link rel="stylesheet" href="assets/styles.min.css">
     <link rel="stylesheet" href="assets/queries.css">
     <link rel="stylesheet" href="assets/animate.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/flipclock.css">
-    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Bad+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="assets/new-year.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Pinyon+Script|Delius+Swash+Caps|Courgette&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/flipclock.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -78,39 +80,22 @@
             </header>
         </section>
         <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="hero-content text-center">
-                        <h1>Conor & Rebecca</h1>
-                        <div class="container">
-                            <div class="clock"></div>
-
-                            <script type="text/javascript">
-                                var clock;
-                                $(document).ready(function () {
-                                    // Grab the current date
-                                    var currentDate = new Date();
-                                    // Set some date in the future. In this case, it's always Jan 1
-                                    var futureDate = new Date('Mar 27, 2020, 13:00');
-                                    // Calculate the difference in seconds between the future and current date
-                                    var diff = (futureDate.getTime() - currentDate.getTime()) / 1000;
-                                    // Instantiate a coutdown FlipClock                    
-                                    clock = new FlipClock($('.clock'), 36002410, {
-                                        clockFace: 'DailyCounter',
-                                        countdown: true,
-                                    });
-                                    clock.setTime(diff);
-                                    clock.start();
-
-                                });
-                            </script>
+            
+                    <div class="hero-content text-center">                     
+                         
+                        <!-- partial:index.partial.html -->
+                        <div class="container">                                            
+                            <div class="new-year">                                
+                            </div>
                         </div>
-                        <!-- <img src="img/logo-lg.png"> -->
-                        <!--<p class="intro">We're getting married!!</p>-->
-                        <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
-                    </div>
+
+                        <!-- partial -->
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+                        <script src="js/new-year.js"></script>
+
+                    
                 </div>
-            </div>
+            
         </div>
         <div class="down-arrow floating-arrow">
             <a href="#invitation">
@@ -139,11 +124,7 @@
         <div id="map-content-wrapper" class="container pointer-events-none">
             <div class="row">
                 <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                    <!-- <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div> -->
+    
                     <div id="map-content" class="pointer-events-auto">
                         <div class="column">
                             <div class="col-md-6 text-center">
@@ -154,11 +135,11 @@
                         <div class="row text-center">
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=Curraha+Catholic+Church,+Crickstown,+Co.+Meath,+Ireland">
-                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
                             </div>
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-accent btn-small" href="https://currahaparish.ie/curraha-parish/">
-                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                                    <i class="fa fa-desktop"></i>&nbsp;&nbsp;Website</a>
                             </div>
                         </div>
                     </div>
@@ -172,11 +153,11 @@
                         <div class="row text-center">
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=ballymagarvey+village,+Balrath,+Co.+Meath,+Ireland">
-                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
                             </div>
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-accent btn-small" href="https://www.ballymagarvey.ie/">
-                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                                    <i class="fa fa-desktop"></i>&nbsp;&nbsp;Website</a>
                             </div>
                         </div>
                     </div>
@@ -208,7 +189,7 @@
                         <div class="row text-center">
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-fill btn-small" href="https://www.google.com/maps/search/Hotels/@53.6200708,-6.50768,14z/data=!3m1!4b1!4m12!2m11!3m6!1sHotels!2sBallymagarvey+Village,+Ballymagarvey,+Balrath,+Co.+Meath,+Ireland!3s0x486740ea6461d033:0x6395a2cc838f54c4!4m2!1d-6.4901704!2d53.6200403!5m2!5m1!1s2020-03-27!6e3">
-                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
                             </div>
                         </div>
                     </div>
@@ -222,7 +203,7 @@
                         <div class="row text-center">
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-fill btn-small" href="https://www.google.com/maps/search/beauty+salons/@53.620128,-6.5602103,12z/data=!3m1!4b1!4m8!2m7!3m6!1sbeauty+salons!2sBallymagarvey+Village,+Ballymagarvey,+Balrath,+Co.+Meath,+Ireland!3s0x486740ea6461d033:0x6395a2cc838f54c4!4m2!1d-6.4901704!2d53.6200403">
-                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
                             </div>
                         </div>
                     </div>
@@ -236,11 +217,11 @@
                         <div class="row text-center">
                             <div class="col-sm-6" style="padding: 5px;">
                                 <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=tayto+park,+Ashbourne,+Co.+Meath,+Ireland">
-                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
                             </div>
                             <div class="col-sm-6" style="padding: 5px;">
                                 <a class="btn btn-accent btn-small" href="http://www.taytopark.ie/">
-                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                                    <i class="fa fa-desktop"></i>&nbsp;&nbsp;Website</a>
                             </div>
                         </div>
                     </div>
@@ -255,11 +236,11 @@
                         <div class="row text-center">
                             <div class="col-md-6" style="padding: 5px;">
                                 <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=Aviva+Stadium,+Lansdowne+Road,+Dublin,+Ireland">
-                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
                             </div>
                             <div class="col-sm-6" style="padding: 5px;">
                                 <a class="btn btn-accent btn-small" href="https://www.avivastadium.ie/">
-                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                                    <i class="fa fa-desktop"></i>&nbsp;&nbsp;Website</a>
                             </div>
                         </div>
                     </div>
@@ -460,7 +441,7 @@
             </div>
 
         </form>
-    </section>    
+    </section>
     <!-- END -->
     <footer>
         <div class="container">
@@ -478,8 +459,8 @@
         </div>
     </footer>
 
-<!-- Submit the Form to Google Using "AJAX" -->
-<script data-cfasync="false" src="js/form-submission-handler.js"></script>
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="js/form-submission-handler.js"></script>
 </body>
 
 </html>

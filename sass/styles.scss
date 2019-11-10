@@ -37,8 +37,8 @@ a:hover, a:focus {
   text-decoration: none;
 }
 body {
-  font-family: 'Tangerine', cursive;  
-  font-weight: $light;
+  font-family: 'Courgette', cursive;  
+  font-weight: $normal;
   color: $txt-primary;
   -webkit-text-size-adjust: 100%;
   //fix for iOS
@@ -252,7 +252,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/outside3.jpg') center center;
+  background: url('../img/outside4.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -826,10 +826,7 @@ Google map
 .pointer-events-auto {
   pointer-events: auto;
 }
-.timer {
-  zoom: 0.5;
-  -moz-transform: scale(0.5);
-}
+
 
 
 
@@ -857,6 +854,7 @@ input[type="radio"]:checked + label {
 
 .rsvp {
   padding-bottom: 140px;
+
 }
 .form-elements {
   padding-bottom: 140px;
@@ -865,7 +863,7 @@ input[type="radio"]:checked + label {
   padding: 15px 0;
   border-radius: 3px;
   width: 100%;
-  font-size: 13px;
+  font-size: 23px;
   background-color: $accent-color-hover;
   border: thin solid $accent-color-hover;
 }
@@ -909,6 +907,7 @@ input[type="radio"]:checked + label {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     border: none;
+    font-size: 23px;
   }
   select {
     padding-left: 68px;
@@ -920,6 +919,7 @@ input[type="radio"]:checked + label {
     border: none;       
     text-align-last:center;
     padding-right: 29px;
+    font-size: 23px;
     
   }
   
