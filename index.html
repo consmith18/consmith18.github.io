@@ -39,6 +39,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
 
+
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -115,7 +116,7 @@
         </div>
     </section>
 
-    <section id="map" "section-padding">
+    <section id="map" >
         <div class="text-center">
             <h3>How do I get there?</h3>
             <p>It's way easier than you think!</p>
@@ -166,90 +167,95 @@
         </div>
     </section>
 
-    <section id="links">
+    <section class="events" id="events">
         <div class="text-center">
-            <h3>Nearby</h3>
-            <p></p>
+            <h3>Who's who!?</h3>
         </div>
-        <div id="map-canvas"></div>
-        <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                    <!-- <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div> -->
-                    <div id="map-content" class="pointer-events-auto">
-                        <div class="column">
-                            <div class="col-md-6 text-center">
-                                <h5>View Hotels</h5>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-md-6" style="padding: 5px;">
-                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps/search/Hotels/@53.6200708,-6.50768,14z/data=!3m1!4b1!4m12!2m11!3m6!1sHotels!2sBallymagarvey+Village,+Ballymagarvey,+Balrath,+Co.+Meath,+Ireland!3s0x486740ea6461d033:0x6395a2cc838f54c4!4m2!1d-6.4901704!2d53.6200403!5m2!5m1!1s2020-03-27!6e3">
-                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="map-content" class="pointer-events-auto">
-                        <div class="column">
-                            <div class="col-md-6 text-center">
-                                <h5>Hair & Beauty Salons</h5>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-md-6" style="padding: 5px;">
-                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps/search/beauty+salons/@53.620128,-6.5602103,12z/data=!3m1!4b1!4m8!2m7!3m6!1sbeauty+salons!2sBallymagarvey+Village,+Ballymagarvey,+Balrath,+Co.+Meath,+Ireland!3s0x486740ea6461d033:0x6395a2cc838f54c4!4m2!1d-6.4901704!2d53.6200403">
-                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="map-content" class="pointer-events-auto">
-                        <div class="column">
-                            <div class="col-sm-6 text-center">
-                                <h5>Tayto Park</h5>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-sm-6" style="padding: 5px;">
-                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=tayto+park,+Ashbourne,+Co.+Meath,+Ireland">
-                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
-                            </div>
-                            <div class="col-sm-6" style="padding: 5px;">
-                                <a class="btn btn-accent btn-small" href="http://www.taytopark.ie/">
-                                    <i class="fa fa-desktop"></i>&nbsp;&nbsp;Website</a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <div class="wp3">
+                    <p>
+                    </p>
 
-                    <div id="map-content" class="pointer-events-auto">
-                        <div class="column">
-                            <div class="col-md-6 text-center">
-                                <h5>Home of the world's greatest football team</h5>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-md-6" style="padding: 5px;">
-                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=Aviva+Stadium,+Lansdowne+Road,+Dublin,+Ireland">
-                                    <i class="fa fa-car"></i>&nbsp;&nbsp;Map Directions</a>
-                            </div>
-                            <div class="col-sm-6" style="padding: 5px;">
-                                <a class="btn btn-accent btn-small" href="https://www.avivastadium.ie/">
-                                    <i class="fa fa-desktop"></i>&nbsp;&nbsp;Website</a>
-                            </div>
-                        </div>
-                    </div>
+                    <h5>Groom</h5>
+                    <p>Conor Smith</p>
+                </div>
+                <div class="wp5">
+                    <h5>Father of the Groom
+                    </h5>
+                    <p>Stephen Smith</p>
+                </div>
+                <div class="wp5">
+                    <h5>Mother of the Groom
+                        <span class="time"></span>
+                    </h5>
+                    <p>Brona Smith</p>
+                </div>
+                <div class="wp5">
+                    <h5>Brothers of the Groom
+                        <span class="time"></span>
+                    </h5>
+                    <p>Eoin Smith</p>
+                    <p>Pearse Smith</p>
+                </div>
+                <div class="wp5">
+                    <h5>Sister of the Groom
+                        <span class="time"></span>
+                    </h5>
+                    <p>Una Smith</p>
+                </div>
+                <div class="wp5">
+                    <h5>Groomsmen
+                        <span class="time"></span>
+                    </h5>
+                    <p>Brendan Boylan</p>
+                    <p>Conor Brown</p>
+                    <p>Patrick Hickland</p>
+                    <p>Mark O'Kane</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <div class="wp3">
+                    <p>
+                    </p>
+
+                    <h5>Bride</h5>
+                    <p>Rebecca Black</p>
+                </div>
+                <div class="wp5">
+                    <h5>Father of the Bride
+                    </h5>
+                    <p>Barry Black</p>
+                </div>
+                <div class="wp5">
+                    <h5>Mother of the Bride
+                        <span class="time"></span>
+                    </h5>
+                    <p>Joanne Black</p>
+                </div>
+                <div class="wp5">
+                    <h5>Brothers of the Bride
+                        <span class="time"></span>
+                    </h5>
+                    <p>Liam Black</p>
+                    <p>Jamie Black</p>
+                </div>                
+                <div class="wp5">
+                    <h5>Bridesmaids
+                        <span class="time"></span>
+                    </h5>
+                    <p>Amy Conlon</p>
+                    <p>Hannah Donnelly</p>
+                    <p>Kelly Pendleton</p>
                 </div>
             </div>
         </div>
     </section>
 
-  
     <section class="rsvp text-center" id="rsvp">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -279,33 +285,26 @@
                 </div>
 
                 <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                                <fieldset class="pure-group">
-                                    <i class="fa fa-check-square"></i>
-                                    <select name="attending" id="attending" required>
-                                        <option value="">Can you go?</option>
-                                        <option value="Yes">Yes! To Infinity And Beyond! </option>
-                                        <option value="No">No Sorry! This town ain't big enough for the two of us!</option>
-                                    </select>
-                                </fieldset>
-                            </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-12 col-sm-6">
                         <fieldset class="pure-group">
-                            <i class="fa fa-users"></i>
-                            <input id="number" name="number" type="number" required placeholder="Number of guests?" />
+                            <i class="fa fa-check-square"></i>
+                            <select name="attending" id="attending" required>
+                                <option value="">Can you go?</option>
+                                <option value="Yes">Yes! To Infinity And Beyond! </option>
+                                <option value="No">No Sorry! This town ain't big enough for the two of us!</option>
+                            </select>
                         </fieldset>
-                    </div>              
-
+                    </div>
                 </div>
 
                 <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
 
-                                <fieldset class="pure-group">
-                                    <i class="fa fa-cutlery"></i>
-                                    <input id="diet" name="diet" placeholder="Dietry Requirements?" />
-                                </fieldset>
-                            </div>
+                        <fieldset class="pure-group">
+                            <i class="fa fa-cutlery"></i>
+                            <input id="diet" name="diet" placeholder="Dietry Requirements?" />
+                        </fieldset>
+                    </div>
                     <div class="col-md-6 col-sm-6">
 
                         <fieldset class="pure-group">
@@ -314,7 +313,7 @@
                         </fieldset>
                     </div>
 
-                    
+
 
                 </div>
                 <div class="col-md-6 col-sm-6">
@@ -353,6 +352,14 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+    <script src="js/scripts.min.js"></script>
 
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" src="js/form-submission-handler.js"></script>
