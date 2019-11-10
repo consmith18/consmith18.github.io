@@ -6,10 +6,12 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Conor and Rebecca's Wedding!</title>
     <meta name="description" content="We would like to invite you to our big day.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,232 +32,244 @@
     <link rel="stylesheet" href="assets/styles.min.css">
     <link rel="stylesheet" href="assets/queries.css">
     <link rel="stylesheet" href="assets/animate.min.css">
-    <link rel="stylesheet" href="assets/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/flipclock.css">
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Bad+Script&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/flipclock.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
+
 <body id="top">
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<section class="hero">
-    <section class="navigation">
-        <header>
-            <div class="header-content">
-                <!-- <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div> -->
-                <div class="header-nav">
-                    <nav>
-                        <ul class="primary-nav">                                 
-                            <li><a href="#map">Maps</a></li>
-                            <li><a href="#links">Links</a></li>                            
-                            <!-- <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li> -->
-                        </ul>
-                        <ul class="member-actions">
-                            
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="navicon">
-                    <a class="nav-toggle" href="#"><span></span></a>
-                </div>
-            </div>
-        </header>
-    </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="hero-content text-center">
-                    <h1>Conor & Rebecca</h1>
-                    <div class="container">
-                        <div class="clock" style="max-width:940px;
-                        margin:2em auto;"></div>
-		
-                        <script type="text/javascript">
-                            var clock;
-                            $(document).ready(function() {
-                            // Grab the current date
-                                var currentDate = new Date();
-                            // Set some date in the future. In this case, it's always Jan 1
-                                var futureDate  = new Date('Mar 27, 2020, 13:00');
-                                // Calculate the difference in seconds between the future and current date
-                                var diff = (futureDate.getTime() - currentDate.getTime()) / 1000;
-                    // Instantiate a coutdown FlipClock                    
-                                clock = new FlipClock($('.clock'), 36002410, {
-                                    clockFace: 'DailyCounter',
-                                    countdown: true,                        
-                                });
-                                clock.setTime(diff);
-                                clock.start();
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <!-- <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div> -->
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li>
+                                    <a href="#map">Maps</a>
+                                </li>
+                                <li>
+                                    <a href="#links">Links</a>
+                                </li>
+                                <!-- <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li> -->
+                            </ul>
+                            <ul class="member-actions">
 
-                            });
-                        </script>
+                                <li>
+                                    <a href="#rsvp" class="btn-white btn-small">RSVP</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <!-- <img src="img/logo-lg.png"> -->
-                    <!--<p class="intro">We're getting married!!</p>-->
-                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content text-center">
+                        <h1>Conor & Rebecca</h1>
+                        <div class="container">
+                            <div class="clock" style="max-width:940px;
+                        margin:2em auto;"></div>
+
+                            <script type="text/javascript">
+                                var clock;
+                                $(document).ready(function () {
+                                    // Grab the current date
+                                    var currentDate = new Date();
+                                    // Set some date in the future. In this case, it's always Jan 1
+                                    var futureDate = new Date('Mar 27, 2020, 13:00');
+                                    // Calculate the difference in seconds between the future and current date
+                                    var diff = (futureDate.getTime() - currentDate.getTime()) / 1000;
+                                    // Instantiate a coutdown FlipClock                    
+                                    clock = new FlipClock($('.clock'), 36002410, {
+                                        clockFace: 'DailyCounter',
+                                        countdown: true,
+                                    });
+                                    clock.setTime(diff);
+                                    clock.start();
+
+                                });
+                            </script>
+                        </div>
+                        <!-- <img src="img/logo-lg.png"> -->
+                        <!--<p class="intro">We're getting married!!</p>-->
+                        <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+                    </div>
                 </div>
             </div>
-        </div>                
-    </div>
-    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-</section>
+        </div>
+        <div class="down-arrow floating-arrow">
+            <a href="#invitation">
+                <i class="fa fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
 
-<section id="invitation" class="section-padding">
-    
+    <section id="invitation" class="section-padding">
+
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>We are getting married!!</h3>
-                <p>On the 27<sup>th</sup> of March 2020 and we would love you to be a part of our big day!</p>                              
-            </div>    
-    </div>
-</section>
+                <p>On the 27
+                    <sup>th</sup> of March 2020 and we would love you to be a part of our big day!</p>
+            </div>
+        </div>
+    </section>
 
-<section id="map" "section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <!-- <div class="text-center">
+    <section id="map" "section-padding">
+        <div class="text-center">
+            <h3>How do I get there?</h3>
+            <p>It's way easier than you think!</p>
+        </div>
+        <div id="map-canvas"></div>
+        <div id="map-content-wrapper" class="container pointer-events-none">
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                    <!-- <div class="text-center">
                     <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
                         <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
                     </div>
                 </div> -->
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="column">
-                        <div class="col-md-6 text-center">
-                            <h5>St Andrews Church </h5>
-                            <p>Crickstown, Co. Meath, Ireland</p>
-                        </div>                        
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://www.google.com/maps?saddr=My+Location&daddr=Curraha+Catholic+Church,+Crickstown,+Co.+Meath,+Ireland"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                    <div id="map-content" class="pointer-events-auto">
+                        <div class="column">
+                            <div class="col-md-6 text-center">
+                                <h5>St Andrews Church </h5>
+                                <p>Crickstown, Co. Meath, Ireland</p>
+                            </div>
                         </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" href="https://currahaparish.ie/curraha-parish/"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                        <div class="row text-center">
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=Curraha+Catholic+Church,+Crickstown,+Co.+Meath,+Ireland">
+                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                            </div>
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-accent btn-small" href="https://currahaparish.ie/curraha-parish/">
+                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="column">
-                        <div class="col-md-6 text-center">
-                            <h5>Ballymagarvey Village</h5>
-                            <p>Balrath, Co. Meath, Ireland</p>
-                        </div>                        
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://www.google.com/maps?saddr=My+Location&daddr=ballymagarvey+village,+Balrath,+Co.+Meath,+Ireland"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                    <div id="map-content" class="pointer-events-auto">
+                        <div class="column">
+                            <div class="col-md-6 text-center">
+                                <h5>Ballymagarvey Village</h5>
+                                <p>Balrath, Co. Meath, Ireland</p>
+                            </div>
                         </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" href="https://www.ballymagarvey.ie/"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                        <div class="row text-center">
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=ballymagarvey+village,+Balrath,+Co.+Meath,+Ireland">
+                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                            </div>
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-accent btn-small" href="https://www.ballymagarvey.ie/">
+                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
-</section>
+    </section>
 
-<section id="links">
-    <div class="text-center">
-        <h3>Nearby</h3>
-        <p></p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <!-- <div class="text-center">
+    <section id="links">
+        <div class="text-center">
+            <h3>Nearby</h3>
+            <p></p>
+        </div>
+        <div id="map-canvas"></div>
+        <div id="map-content-wrapper" class="container pointer-events-none">
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                    <!-- <div class="text-center">
                     <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
                         <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
                     </div>
                 </div> -->
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="column">
-                        <div class="col-md-6 text-center">
-                            <h5>View Hotels</h5>                            
-                        </div>                        
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://www.google.com/maps/search/Hotels/@53.6200708,-6.50768,14z/data=!3m1!4b1!4m12!2m11!3m6!1sHotels!2sBallymagarvey+Village,+Ballymagarvey,+Balrath,+Co.+Meath,+Ireland!3s0x486740ea6461d033:0x6395a2cc838f54c4!4m2!1d-6.4901704!2d53.6200403!5m2!5m1!1s2020-03-27!6e3"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                    <div id="map-content" class="pointer-events-auto">
+                        <div class="column">
+                            <div class="col-md-6 text-center">
+                                <h5>View Hotels</h5>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps/search/Hotels/@53.6200708,-6.50768,14z/data=!3m1!4b1!4m12!2m11!3m6!1sHotels!2sBallymagarvey+Village,+Ballymagarvey,+Balrath,+Co.+Meath,+Ireland!3s0x486740ea6461d033:0x6395a2cc838f54c4!4m2!1d-6.4901704!2d53.6200403!5m2!5m1!1s2020-03-27!6e3">
+                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="column">
-                        <div class="col-md-6 text-center">
-                            <h5>Hair & Beauty Salons</h5>
-                            <p></p>
-                        </div>                        
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://www.google.com/maps/search/beauty+salons/@53.620128,-6.5602103,12z/data=!3m1!4b1!4m8!2m7!3m6!1sbeauty+salons!2sBallymagarvey+Village,+Ballymagarvey,+Balrath,+Co.+Meath,+Ireland!3s0x486740ea6461d033:0x6395a2cc838f54c4!4m2!1d-6.4901704!2d53.6200403"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
-                        </div>                       
-                    </div>                    
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="column">
-                        <div class="col-sm-6 text-center">
-                            <h5>Tayto Park</h5>
-                            <p></p>
-                        </div>                        
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-sm-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://www.google.com/maps?saddr=My+Location&daddr=tayto+park,+Ashbourne,+Co.+Meath,+Ireland"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
-                        </div>                       
-                        <div class="col-sm-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" href="http://www.taytopark.ie/"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
-                        </div> 
-                    </div>                                       
-                </div>
-                
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="column">
-                        <div class="col-md-6 text-center">
-                            <h5>Home of the world's greatest football team</h5>
-                            <p></p>
-                        </div>                        
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"                            
-                               href="https://www.google.com/maps?saddr=My+Location&daddr=Aviva+Stadium,+Lansdowne+Road,+Dublin,+Ireland"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                    <div id="map-content" class="pointer-events-auto">
+                        <div class="column">
+                            <div class="col-md-6 text-center">
+                                <h5>Hair & Beauty Salons</h5>
+                                <p></p>
+                            </div>
                         </div>
-                        <div class="col-sm-6" style="padding: 5px;">
-                                <a class="btn btn-accent btn-small" href="https://www.avivastadium.ie/"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
-                            </div>                     
-                    </div>                    
+                        <div class="row text-center">
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps/search/beauty+salons/@53.620128,-6.5602103,12z/data=!3m1!4b1!4m8!2m7!3m6!1sbeauty+salons!2sBallymagarvey+Village,+Ballymagarvey,+Balrath,+Co.+Meath,+Ireland!3s0x486740ea6461d033:0x6395a2cc838f54c4!4m2!1d-6.4901704!2d53.6200403">
+                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="map-content" class="pointer-events-auto">
+                        <div class="column">
+                            <div class="col-sm-6 text-center">
+                                <h5>Tayto Park</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-sm-6" style="padding: 5px;">
+                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=tayto+park,+Ashbourne,+Co.+Meath,+Ireland">
+                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                            </div>
+                            <div class="col-sm-6" style="padding: 5px;">
+                                <a class="btn btn-accent btn-small" href="http://www.taytopark.ie/">
+                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="map-content" class="pointer-events-auto">
+                        <div class="column">
+                            <div class="col-md-6 text-center">
+                                <h5>Home of the world's greatest football team</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-fill btn-small" href="https://www.google.com/maps?saddr=My+Location&daddr=Aviva+Stadium,+Lansdowne+Road,+Dublin,+Ireland">
+                                    <i class="fa fa-taxi"></i>&nbsp;&nbsp;Map Directions</a>
+                            </div>
+                            <div class="col-sm-6" style="padding: 5px;">
+                                <a class="btn btn-accent btn-small" href="https://www.avivastadium.ie/">
+                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Website</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>    
-</section>
+    </section>
 
-<!-- <section class="rsvp text-center" id="rsvp">
+    <!-- <section class="rsvp text-center" id="rsvp">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -352,137 +366,123 @@
         </div>
     </div>
 </section> -->
-
-<section class="rsvp text-center" id="rsvp">
-
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>You're my favorite deputy!</h3>
-                        <p>Thank you for your response</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
+    <section class="rsvp text-center" id="rsvp">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>What are you waiting for?</h3>
                 <p>We would greatly appreciate if you could RSVP before 28th of February 2020</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                  
-                    <div class="row">
-                            <div class="col-md-12 col-sm-6">
-                                    <div class="form-input-group">
-                                        <i class="fa fa-check-square"></i><select name="attending" id="attending" required>
-                                                <option>Can you go?</option>
-                                                <option value="Yes">Yes! To Infinity And Beyond! </option>
-                                                <option value="No">No Sorry! This town ain't big enough for the two of us!</option>
-                                            </select>
-                                    </div>
-                                </div>                                
-                    </div>    
-                    <div class="row">                        
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="Forename" class=""
-                                                                     placeholder="Forename"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="Surname" class=""
-                                                                 placeholder="Surname"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="10"
-                                                                  placeholder="Number of guests"
-                                                                  required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-cutlery"></i><input name="diet" class="" 
-                                                                  placeholder="Any dietry requirements?"
-                                                                  >
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-music"></i><input name="song" class="" 
-                                                                  placeholder="Pick a Song!"
-                                                                  >
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                            RSVP!
-                            <script type="text/javascript">                                                            
-                                var data = $(this).serialize();
-                                
-                                $('#alert-wrapper').html('<div class="alert alert-' + 'info' + '" role="alert">' + '<strong>Just a sec!</strong> We are saving your details.' + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>');
-                        
-                                if (MD5($('#invite_code').val()) !== '883e881bb4d22a7add958f2d6b052c9f') {
-                                    $('#alert-wrapper').html('<div class="alert alert-' + 'danger' + '" role="alert">' + '<strong>Sorry!</strong> Your invite code is incorrect.');
-                                } else {
-                                    $.post('https://script.google.com/macros/s/AKfycbyEYVtQ_AavGp5Tx_ey5VVSY3QFq39HCL1h18vFYg5E_Kfa1YQ/exec', data)
-                                        .done(function (data) {
-                                            console.log(data);
-                                            $('#alert-wrapper').html('');
-                                            $('#rsvp-modal').modal('show');
-                                        })
-                                        .fail(function (data) {
-                                            console.log(data);
-                                            $('#alert-wrapper').html('<div class="alert alert-' + 'danger' + '" role="alert">' + '<strong>Sorry!</strong> There is some issue with the server. ');
-                                        });
-                                    }                            
-                        </script>
-
-                    </button>
-                </form>
             </div>
         </div>
-    </div>
-</section>
+        <form class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbyEYVtQ_AavGp5Tx_ey5VVSY3QFq39HCL1h18vFYg5E_Kfa1YQ/exec">
+            <!-- change the form action to your script url -->
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p> Conor <span class="fa fa-heart pulse2"></span> Rebecca</p>
+            <div class="form-elements">
+                <div class="row">
+                    <div class="col-md-12 col-sm-6">
+                        <fieldset class="pure-group">
+                            <i class="fa fa-check-square"></i>
+                            <select name="attending" id="attending" required>
+                                <option>Can you go?</option>
+                                <option value="Yes">Yes! To Infinity And Beyond! </option>
+                                <option value="No">No Sorry! This town ain't big enough for the two of us!</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <fieldset class="pure-group">
+                            <i class="fa fa-user"></i>
+                            <input id="firstname" name="firstname" required placeholder="First Name" />
+                        </fieldset>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <fieldset class="pure-group">
+                            <i class="fa fa-user"></i>
+                            <input id="surname" name="surname" required placeholder="Surname"></input>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <fieldset class="pure-group">
+                            <i class="fa fa-users"></i>
+                            <input id="number" name="number" type="number" required placeholder="1" />
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+
+                        <fieldset class="pure-group">
+                            <i class="fa fa-cutlery"></i>
+                            <input id="diet" name="diet" placeholder="e.g. gluten free" />
+                        </fieldset>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+
+                        <fieldset class="pure-group">
+                            <i class="fa fa-music"></i>
+                            <input id="song" name="song" placeholder="What song will get you on the dancefloor!" />
+                        </fieldset>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+
+                        <fieldset class="pure-group">
+                            <i class="fa fa-key"></i>
+                            <input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
+                        </fieldset>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <fieldset class="pure-group honeypot-field">
+                        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit
+                            the form! Otherwise, we assume the user is a spam bot.</label>
+                        <input id="honeypot" type="text" name="honeypot" value="" />
+                    </fieldset>
+                </div>
+
+
+                <button class="button-success pure-button button-xlarge">
+                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+            </div>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display:none;">
+                <h2>
+                    <em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+            </div>
+
+        </form>
+    </section>
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <!-- END -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                    <span class="to-top-wrapper">
+                        <a href="#top" class="to-top">
+                            <i class="fa fa-angle-up"></i>
+                        </a>
+                    </span>
+                    <p> Conor
+                        <span class="fa fa-heart pulse2"></span> Rebecca</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 </body>
+
 </html>
