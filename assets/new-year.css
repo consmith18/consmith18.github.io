@@ -94,7 +94,7 @@
     position: relative;
     left: 50%;
     display: table;
-    font-size: 1em;
+    font-size: 6em;
     transform: translateX(-50%);
   }
   .year2 {
