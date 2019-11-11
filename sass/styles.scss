@@ -9,6 +9,12 @@
 @import "partials/colors";
 @import "partials/layout";
 
+@media screen and (min-width: 320px) {
+
+}
+@media screen and (min-width: 600px) {
+
+}
 /* ==========================================================================
 Global Styles
 ========================================================================== */
@@ -172,6 +178,7 @@ Waypoinsts
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible
 }
+
 
 /* ==========================================================================
 Navigation
@@ -552,7 +559,7 @@ Features-stack
 /* ==========================================================================
 .events
 ========================================================================== */
-.events {
+.vips {
   .leftcol {
     padding-right: 100px;
     border-right: solid 1px $keyline-color;

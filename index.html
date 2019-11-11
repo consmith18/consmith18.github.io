@@ -34,10 +34,12 @@
     <link rel="stylesheet" href="assets/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/new-year.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Handlee|Pinyon+Script|Delius+Swash+Caps|Courgette&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -60,7 +62,10 @@
                                     <a href="#map">Maps</a>
                                 </li>
                                 <li>
-                                    <a href="#links">Links</a>
+                                    <a href="#vips">Who's Who!?</a>
+                                </li>
+                                <li>
+                                    <a href="#nearby">Nearby</a>
                                 </li>
                                 <!-- <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li> -->
                             </ul>
@@ -116,7 +121,7 @@
         </div>
     </section>
 
-    <section id="map" >
+    <section id="map">
         <div class="text-center">
             <h3>How do I get there?</h3>
             <p>It's easier than you think!</p>
@@ -167,92 +172,97 @@
         </div>
     </section>
 
-    <section class="events" id="events">
+    <section class="vips" id="vips">
         <div class="text-center">
             <h3>Who's who!?</h3>
         </div>
         <div class="container">
-            <div class="row">
+        <ul class="nav nav-pills nav-justified">
+            <li>
+                <a data-toggle="tab" class="active" href="#bride">Team Bride</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#groom">Team Groom</a>
+            </li>
+        </ul>
+        
+        <div class="tab-content">
+            <div class="tab-pane fade" id="bride" >                
+                    <div class="wp3" >
+                        <h5>Bride</h5>
+                        <p>Rebecca Black</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Father of the Bride
+                        </h5>
+                        <p>Barry Black</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Mother of the Bride
+                            <span class="time"></span>
+                        </h5>
+                        <p>Joanne Black</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Brothers of the Bride
+                            <span class="time"></span>
+                        </h5>
+                        <p>Liam Black</p>
+                        <p>Jamie Black</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Bridesmaids
+                            <span class="time"></span>
+                        </h5>
+                        <p>Amy Conlon</p>
+                        <p>Hannah Donnelly</p>
+                        <p>Kelly Pendleton</p>
+                    </div>                
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <p>
-                    </p>
 
-                    <h5>Groom</h5>
-                    <p>Conor Smith</p>
-                </div>
-                <div class="wp5">
-                    <h5>Father of the Groom
-                    </h5>
-                    <p>Stephen Smith</p>
-                </div>
-                <div class="wp5">
-                    <h5>Mother of the Groom
-                        <span class="time"></span>
-                    </h5>
-                    <p>Brona Smith</p>
-                </div>
-                <div class="wp5">
-                    <h5>Brothers of the Groom
-                        <span class="time"></span>
-                    </h5>
-                    <p>Eoin Smith</p>
-                    <p>Pearse Smith</p>
-                </div>
-                <div class="wp5">
-                    <h5>Sister of the Groom
-                        <span class="time"></span>
-                    </h5>
-                    <p>Una Smith</p>
-                </div>
-                <div class="wp5">
-                    <h5>Groomsmen
-                        <span class="time"></span>
-                    </h5>
-                    <p>Brendan Boylan</p>
-                    <p>Conor Brown</p>
-                    <p>Patrick Hickland</p>
-                    <p>Mark O'Kane</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp3">
-                    <p>
-                    </p>
+            <div class="tab-pane fade" id="groom">                
+                    <div class="wp3">
+                        <p>
+                        </p>
 
-                    <h5>Bride</h5>
-                    <p>Rebecca Black</p>
-                </div>
-                <div class="wp5">
-                    <h5>Father of the Bride
-                    </h5>
-                    <p>Barry Black</p>
-                </div>
-                <div class="wp5">
-                    <h5>Mother of the Bride
-                        <span class="time"></span>
-                    </h5>
-                    <p>Joanne Black</p>
-                </div>
-                <div class="wp5">
-                    <h5>Brothers of the Bride
-                        <span class="time"></span>
-                    </h5>
-                    <p>Liam Black</p>
-                    <p>Jamie Black</p>
-                </div>                
-                <div class="wp5">
-                    <h5>Bridesmaids
-                        <span class="time"></span>
-                    </h5>
-                    <p>Amy Conlon</p>
-                    <p>Hannah Donnelly</p>
-                    <p>Kelly Pendleton</p>
-                </div>
-            </div>
+                        <h5>Groom</h5>
+                        <p>Conor Smith</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Father of the Groom
+                        </h5>
+                        <p>Stephen Smith</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Mother of the Groom
+                            <span class="time"></span>
+                        </h5>
+                        <p>Brona Smith</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Brothers of the Groom
+                            <span class="time"></span>
+                        </h5>
+                        <p>Eoin Smith</p>
+                        <p>Pearse Smith</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Sister of the Groom
+                            <span class="time"></span>
+                        </h5>
+                        <p>Una Smith</p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Groomsmen
+                            <span class="time"></span>
+                        </h5>
+                        <p>Brendan Boylan</p>
+                        <p>Conor Brown</p>
+                        <p>Patrick Hickland</p>
+                        <p>Mark O'Kane</p>
+                    </div>
+                </div> 
+            </div>           
         </div>
     </section>
 
@@ -287,7 +297,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-6">
                         <fieldset class="pure-group">
-                            
+
                             <select name="attending" id="attending" required>
                                 <option value="">Can you go?</option>
                                 <option value="Yes">Yes! To Infinity And Beyond! </option>
@@ -354,7 +364,7 @@
     </footer>
 
     <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/vendor/jquery.waypoints.min.js"></script>
