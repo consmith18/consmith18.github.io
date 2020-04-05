@@ -15,9 +15,9 @@
       hours = hours - (days * 24);
       minutes = minutes - (days * 24 * 60) - (hours * 60);
       seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
-      var day = new Date('2020-03-27').getDate().toString();
-      var month = (new Date('2020-03-27').getMonth() + 1).toString();
-      var year = new Date('2020-03-27').getFullYear().toString().substr(2);
+      var day = new Date('2020-08-12').getDate().toString();
+      var month = (new Date('2020-08-12').getMonth() + 1).toString();
+      var year = new Date('2020-08-12').getFullYear().toString().substr(2);
       var total = day.concat('.');
       total = total.concat(month);
       total = total.concat('.');
