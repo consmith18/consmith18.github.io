@@ -20,7 +20,7 @@
   "homepage": "https://github.com/rampatra/wedding-website",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.0"
